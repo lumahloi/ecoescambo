@@ -1,0 +1,25 @@
+.aceitar {
+  background-color: var(--keppel);
+}
+
+.recusar {
+  background-color: var(--attention);
+}
+
+@media screen and (max-width: 550px) {
+  .botoes {
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+  .botoes button {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 551px) {
+  .botoes {
+    width: 55%;
+    margin: auto;
+  }
+}

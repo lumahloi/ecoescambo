@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto - Eco Escambo</title>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/smContainer.css">
+</head>
+
+<body>
+    <header id="logo-header" class="text-center">
+        <a href="./index.html"><span id="logo-text">EcoEscambo</span></a>
+    </header>
+
+    <main class="container flex flex-col gap-lg">
+        <h1 class="text-center">Cadastro de Produto</h2>
+
+            <form class="flex flex-col gap-md" action="./meusProdutos.html">
+                <label for="form-img">Imagem do Produto: </label>
+                <input type="file" id="form-img" name="form-img" accept="image/*">
+
+                <label for="form-prod-name">Nome do Produto: </label>
+                <input type="text" id="form-prod-name" name="form-prod-name"
+                    placeholder="Ex: Bicicleta usada, Sapato em bom estado" required>
+
+                <label for="form-prod-desc">Descrição:</label>
+                <textarea id="form-prod-desc" name="form-prod-desc"
+                    placeholder="Descreva o estado do produto, tempo de uso, etc." rows="4"
+                    style="padding: 7px;"></textarea>
+
+                <button type="submit">Cadastrar Produto</button>
+            </form>
+    </main>
+</body>
+
+</html>

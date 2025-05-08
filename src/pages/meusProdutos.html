@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoEscambo - Meus Produtos</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/meusProdutos.css" />
+    <script src="https://kit.fontawesome.com/c034677dbf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="logo-header" class="text-center">
+        <a href="./index.html"><span id="logo-text">EcoEscambo</span></a>
+    </header>
+
+    <div class="container flex flex-col gap-xl">
+        <header class="flex flex-row" id="segundoHeader">
+            <div>
+                <section class="flex flex-row gap-sm mb-sm">
+                    <a href="./catalogo.html">Catálogo</a>
+                    <span>|</span>
+                    <a href="./meusProdutos.html">Meus Produtos</a>
+                </section>
+                <section class="flex flex-row gap-sm filter-wrapper">
+                    <label for="form-filter">Filtrar:</label>
+                    <span class="flex flex-row gap-sm filter-opcoes">
+                        <span class="flex flex-row gap-sm">
+                            <input type="radio" name="form-filter" id="form-filter-1" checked>
+                            <label for="form-filter-1">Todos</label>
+                        </span>
+                        <span class="flex flex-row gap-sm">
+                            <input type="radio" name="form-filter" id="form-filter-2">
+                            <label for="form-filter-2">Só nos quais há interessados</label>
+                        </span>
+                    </span>
+                </section>
+            </div>
+            <a href="./cadastroDeProduto.html" id="botaoCadastro" class="text-right"><button><i class="fa-solid fa-plus"></i> Cadastrar novo
+                    produto</button></a>
+        </header>
+
+        <article class="flex flex-col product-list gap-lg">
+            <section class="flex flex-row gap-sm product-list-grid">
+                <div class="product-img"><img src="../assets/imgs/PlayStation4.webp" alt="PlayStation 4" /></div>
+                <section>
+                    <h2 class="product-title">Vídeo Game PlayStation 4</h2>
+                    <p class="product-description">Pronto pra zerar uns jogos? Tô trocando meu PlayStation 4,
+                        funcionando direitinho, com controle e cabos originais. Usado com cuidado, sem travar e com
+                        bastante jogo ainda pra render! Perfeito pra quem curte jogar online ou curtir aquele modo
+                        história maratonando. Troco por algo de valor parecido — eletrônicos, instrumentos ou o que você
+                        tiver aí. Me chama pra combinar!</p>
+                </section>
+                <section class="flex flex-row gap-sm">
+                    <button><i class="fa-solid fa-pen-to-square"></i> </button>
+                    <button><i class="fa-solid fa-trash"></i> </button>
+                </section>
+            </section>
+
+            <section class="flex flex-row gap-sm product-list-grid">
+                <div class="product-img"><img src="../assets/imgs/JogoTabuleiroWar.webp" alt="Jogo de Tabuleiro WAR" />
+                </div>
+                <section>
+                    <h2 class="product-title">Jogo de tabuleiro WAR</h2>
+                    <p class="product-description">Curte estratégia e dominar territórios? Tô passando meu WAR, completo
+                        e em ótimo estado! Peças intactas, tabuleiro zerado e pronto pra noites de disputa com os
+                        amigos. Ideal pra quem gosta de jogos clássicos e muita diplomacia (ou tretas divertidas). Troco
+                        por outros jogos de tabuleiro, livros ou algo criativo. Me chama e vamos negociar!</p>
+                </section>
+                <section class="flex flex-row gap-sm">
+                    <button><i class="fa-solid fa-pen-to-square"></i> </button>
+                    <button><i class="fa-solid fa-trash"></i> </button>
+                </section>
+            </section>
+
+            <section class="flex flex-row gap-sm product-list-grid">
+                <div class="product-img"><img src="../assets/imgs/MesaDigitalizadoraWacon.jpg"
+                        alt="Mesa Digitalizadora Wacom" /></div>
+                <section>
+                    <h2 class="product-title">Mesa digitalizadora Wacom</h2>
+                    <p class="product-description">Criatividade a mil? Tô trocando minha mesa digitalizadora Wacom,
+                        funcionando perfeitamente e com caneta original. Ideal pra quem curte desenhar, editar fotos ou
+                        mandar bem no design. Leve, prática e compatível com os principais softwares. Troco por
+                        eletrônicos, livros, itens criativos ou algo que valha a pena. Chama no chat e bora fechar!</p>
+                </section>
+                <section class="flex flex-row gap-sm">
+                    <a href="./ofertasRecebidas.html" class="a-btn"><button><i class="fa-solid fa-eye"></i> </button></a>
+                    <button><i class="fa-solid fa-trash"></i> </button>
+                </section>
+            </section>
+        </article>
+
+        <footer class="text-center">
+            <a href="#">
+                << Prev</a>
+                    <a href="#">1</a>
+                    <a href="#">Next >></a>
+        </footer>
+    </div>
+    <script src="../functions/produtosInteressados.js"></script>
+    <script src="../functions/removerProduto.js"></script>
+    <script src="../functions/removerProdutosInteressados.js"></script>
+</body>
+
+</html>

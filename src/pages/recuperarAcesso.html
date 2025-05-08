@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoEscambo - Login</title>
+  <link rel="stylesheet" href="../styles/global.css" />
+  <link rel="stylesheet" href="../styles/smContainer.css" />
+</head>
+
+<body>
+  <header id="logo-header" class="text-center">
+    <a href="./index.html"><span id="logo-text">EcoEscambo</span></a>
+  </header>
+
+  <main class="container flex flex-col gap-lg">
+    <section class="flex flex-col gap-md">
+      <h1 class="text-center">Recuperação de Conta</h1>
+      <label for="form-email">Redefina a Senha em Duas Etapas</label>
+
+      <form class="flex flex-col gap-md" action="./recuperarSenha.html" id="email-form">
+        <label for="form-email">E-mail:</label>
+        <input type="text" name="form-email" id="form-email" placeholder="Insira seu e-mail" required />
+        <p id="email-error" style="color: red; display: none;">E-mail inválido. Verifique e tente novamente.</p>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="../functions/validarEmail.js" defer></script>
+</body>
+
+</html>

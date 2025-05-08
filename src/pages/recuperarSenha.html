@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoEscambo</title>
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/smContainer.css">
+</head>
+
+<body>
+  <header id="logo-header" class="text-center">
+    <a href="./index.html"><span id="logo-text">EcoEscambo</span></a>
+  </header>
+
+  <main class="container flex flex-col gap-lg">
+    <section class="flex flex-col gap-md">
+      <h1 class="text-center">Redefinir senha</h1>
+
+      <form class="flex flex-col gap-md" action="./index.html" id="email-form">
+        <label for="form-senha">Senha:</label>
+        <input type="password" name="form-senha" placeholder="Insira sua senha" required id="form-senha" />
+
+        <label for="form-confirmaSenha">Confirmar Senha:</label>
+        <input type="password" name="form-confirmaSenha" placeholder="Confirme sua senha" required id="form-senha2" />
+        <p id="error-message" style="color: red;"></p>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="../functions/validarSenha.js" defer></script>
+</body>
+
+</html>

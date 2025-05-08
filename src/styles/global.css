@@ -1,0 +1,300 @@
+/* -------------------------------------------------------------------- CSS RESET --- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+i {
+  color: #fff;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-size: medium;
+  color: var(--bistre);
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------------------------------------------------------------------- CORES --- */
+
+:root {
+  --light-gray: #f4f4f4;
+  --medium-gray: #bebebe;
+  --attention: #f50041;
+  --robin-egg-blue: #3dd6d0;
+  --keppel: #15b097;
+  --cafe-noir: #513c2c;
+  --bistre: #28190e;
+  --black: #000;
+}
+
+/* -------------------------------------------------------------------- TEXT --- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: var(--cafe-noir);
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+a, a::after, a::before {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--attention);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+/* --------------------------------------------------------------------  --- */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--keppel);
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.container {
+  margin: auto;
+  background-color: white;
+  padding: 2em;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+input, button {
+  padding: 7px;
+  display: block;
+}
+
+input[type=submit], button {
+  background-color: var(--cafe-noir);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  margin: 12px 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.gap-sm {
+  gap: 10px;
+}
+
+.gap-md {
+  gap: 15px;
+}
+
+.gap-lg {
+  gap: 30px;
+}
+
+.gap-xl {
+  gap: 40px;
+}
+
+.mb-sm {
+  margin-bottom: 10px;
+}
+
+#logo-header {
+  background-color: var(--light-gray);
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 35px;
+  box-shadow: 10px 10px 100px #00000013;
+  padding: 1em;
+}
+
+#logo-text {
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--cafe-noir);
+}
+
+.product-img {
+  aspect-ratio: 1;
+  width: 100px;
+  max-width: 100%;
+  border: 2px solid var(--bistre);
+  margin: auto;
+  height: auto;
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.product-list-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr 140px;
+  align-items: start;
+  gap: 20px;
+  word-break: break-word;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.product-list-grid.hidden {
+  display: none !important;
+}
+
+.product-title,
+.product-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.product-title {
+  -webkit-line-clamp: 1;
+}
+
+.product-description {
+  -webkit-line-clamp: 3;
+}
+
+.filter-wrapper {
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.filter-opcoes {
+  flex-wrap: wrap;
+}
+
+.btn-interest {
+  background-color: var(--attention);
+}
+
+.fa-trash, .fa-pen-to-square, .fa-eye {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.fa-trash:hover, .fa-pen-to-square:hover, .fa-eye:hover {
+  transform: scale(1.1);
+}
+
+.a-btn {
+  width: 100%;
+}
+/* --------------------------------------------------------------------  MEDIA QUERIES --- */
+
+@media screen and (max-width: 550px) {
+  .product-list-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-img {
+    width: 200px;
+  }
+
+  .product-list-grid > section {
+    width: 100%;
+  }
+
+  .product-list-grid button {
+    width: 100%;
+  }
+  
+  .filter-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .filter-opcoes {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .filter-opcoes > span {
+    width: 100%;
+  }
+}
