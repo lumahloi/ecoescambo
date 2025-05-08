@@ -48,10 +48,16 @@ TBD
 
 ***Felipe Menezes***
 
-<img src="https://github.com/Pandore1O.png" width="80" align="left"/>
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://www.github.com/Pandore1O)
+
+<img src="https://github.com/CauaPadovani.png" width="80" align="left"/>
 
 ***Cauã Padovani***
+
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://www.github.com/CauaPadovani)
 
 <img src="https://github.com/Pandore1O.png" width="80" align="left"/>
 
 ***Lucas dos Santos***
+
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://www.github.com/lumahloi)
